@@ -1,17 +1,3 @@
-// CARROUSEL BOOTSTRAP TEMPLATE ROWS
-var intervalo;
-
-function scrollDireita(){
-    intervalo = setInterval(function(){ document.getElementById('scroller').scrollLeft += 1 }  , 5);
-};
-function scrollEsquerda(){
-    intervalo = setInterval(function(){ document.getElementById('scroller').scrollLeft -= 1 }  , 5);
-};
-function clearScroll(){
-    clearInterval(intervalo);
-};
-
-/* OLD DROP DOWN FUNCTION
 function dropDownFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -30,4 +16,3 @@ window.onclick = function(event) {
         }
     }
 }
-*/
