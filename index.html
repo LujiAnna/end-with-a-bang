@@ -1,20 +1,250 @@
+
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Movies</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    
-    <script src="" async defer></script>
-  </body>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel da Netflix</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+<div class="contain">
+
+
+    <div class="slider">
+        <h3>Ação</h3>
+        <span onmouseover="scrollEsquerda()" onmouseout="clearScroll()" class="handle handlePrev active">
+        <i class="fa fa-caret-left" aria-hidden="true"></i>
+      </span>
+
+        <div id="scroller" class="row">
+            <div class="row__inner">
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gui-card">
+                    <div class="gui-card__media">
+                        <img class="gui-card__img" src="https://img1.ibxk.com.br/2015/11/12/12134915138723.jpg?w=700" alt=""  />
+                    </div>
+                    <div class="gui-card__details">
+                        <div class="gui-card__title">
+                            Assassin’s Creed
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <span onmouseover="scrollDireita()" onmouseout="clearScroll()"  class="handle handleNext active">
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+      </span>
+    </div>
+
+</div>
+
+
+<script src ="script-bob.js"></script>
+</body>
 </html>
+
