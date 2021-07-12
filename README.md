@@ -8,13 +8,21 @@
 
 ## Tech Stack
 
-**Client:** Javascript, ...
-
-**Api:** ...
+**Client:** Javascript, Asynchronous Programming
 
 ## API Reference
 
+**Api:** Movie API
+
 ## Features
+
+> Must Haves
+
+- A display of movies in a scroll
+
+> Nice to Have
+
+- Subscription
 
 ## Project Board
 
@@ -30,10 +38,10 @@
 
 ## Authors
 
-- [@LujiAnna](https://www.github.com/octokatherine)
 - [@neyzar1111](https://github.com/neyzar1111)
 - [@BobWauters](https://github.com/BobWauters)
 - [@kdrbek06](https://github.com/kdrbek06)
+- [@LujiAnna](https://www.github.com/octokatherine)
 
 ## License
 
