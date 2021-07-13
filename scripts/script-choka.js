@@ -24,21 +24,49 @@ handleNext.forEach((e,i)=>e.addEventListener('click',function toRightScroll (){
     rows[i].scrollLeft += 120;
 } ));
 
+// handlePrev.forEach((e,i)=>e.addEventListener('mousedown',function toLeftScroll  (){
+//     intervalo = setInterval(function(){ rows[i].scrollLeft -= 1 }  , 10);
+//
+// } ));
+//
+// handleNext.forEach((e,i)=>e.addEventListener('mousedown',function toRightScroll (){
+//     intervalo = setInterval(function(){ rows[i].scrollLeft += 1 }  , 10);
+// } ));
+// handlePrev.forEach((e,i)=>e.addEventListener("mouseleave", function clearScroll(){
+//     clearInterval(intervalo);
+//
+// }));
+// handleNext.forEach((e,i)=>e.addEventListener("mouseleave", function clearScroll(){
+//     clearInterval(intervalo);
+//
+// }))
 
 
 
 // API key
 //2fc09aa4868aaf55aacca5023aea7172
-//img urlgit
+//img url
 //https://image.tmdb.org/t/p/w500
+const imgUrl = 'https://image.tmdb.org/t/p/w500';
 fetch("\n" +
     "https://api.themoviedb.org/3/movie/popular?api_key=2fc09aa4868aaf55aacca5023aea7172&language=en-US")
     .then(response => {
         return response.json();
     })
     .then(data => {
-        console.log(data)
+        console.log(data.results)
+        setImagesForPopular(data.results)
     })
     .catch(err => {
         console.error(err);
     });
+
+let images = document.querySelectorAll(".gui-card__img");
+let title = document.querySelectorAll(".gui-card__title");
+
+const setImagesForPopular = (res)=>{
+    for(let i = 0 ; i < 20; i++){
+        images[i].src = `${imgUrl}${res[i].backdrop_path}`;
+        title[i].innerHTML = res[i].title;
+    }
+}
