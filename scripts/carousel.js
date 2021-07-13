@@ -20,22 +20,23 @@ console.log(showcaseElement);
 // create an img and link elements
 let link = document.createElement('a');
 let image = document.createElement('img');
+let p = document.createElement('p');
+
 // console.log(link);
 // console.log(image);
 
 // TODO: fetch url data from script
 // TODO: !Get full or random data from the API. If not get from specific IDs or titles
 
-let movie_url = `https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg`;
-
+let poster_url = "https://m.media-amazon.com/images/M/MV5BMDk3YzgxNDQtNTEzOS00NDMyLWFlYmYtYTZlMDk1NDkxNmMyXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_SX300.jpg";
 // Element.setAttribute(name, value);
 // Value should come from fetching data 
 link.setAttribute('href', '#');
-image.setAttribute('src', movie_url);
-
+image.setAttribute('src', poster_url);
 // let objectURL = URL.createObjectURL(myBlob);
 // image.src = objectURL;
-
+// and give it some content
+const movieTitle = document.createTextNode("The Vampire Diaries");
 // console.log(link);
 // console.log(image);
 
@@ -43,34 +44,19 @@ image.setAttribute('src', movie_url);
 
 // TODO: append element in DOM
 link.append(image);
+// add the text node to the newly created p
+p.appendChild(movieTitle);
 
 // document.body.appendChild(image);
 showcaseElement.append(link);
-
 console.log(link);
-
-
-// Alternative 3
-// const url = new URL('../cats', 'http://www.example.com/dogs');
-// console.log(url.hostname); // "www.example.com"
-// console.log(url.pathname); // "/cats"
-// Copy to Clipboard
-// URL properties can be set to construct the URL:
-
-// url.hash = 'tabby';
-// console.log(url.href); // "http://www.example.com/cats#tabby"
-
-// TODO: Style displayed images
-
+showcaseElement.append(p);
 
 // TODO: Display data object on the console 
 
 
 // TODO: check error for when poster is unavailable: "Poster": "N/A"
 // https://www.omdbapi.com/?apikey=5387798f&t=without remorse
-
-
-
 
 // TODO: Add arrows to scroll
 //  TODO: Scroll images right and left    

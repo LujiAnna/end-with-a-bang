@@ -1,19 +1,45 @@
 body {
   background-color: gray ;
+
 }
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+#showcase {
+  /* max-width: 1000px; */
+  width: 100%;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+ border: 1px solid #fff;
+}
+
+/* Add name on right of movie */
+
+
 #showcase a img {
-  width: 100vw;
-  /* height: 288px; */
-  height: 
+  position: absolute; 
+  clip: rect(0, 14000px, 400px, 0);
+  /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
+  
+  width: 50%;
+  /* height: 333px; */
   /* read more: overflow css in carousel/gallery */
+
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  float: left;
 }
 
-/* js: Features
-- select movies: search bar should  have options to filter movies with params: names, 
-- import trailer: details page
-- save favorite list to watch later
-- add 1 here
-
-- API: display movies, 
-
-*/
+#showcase p {
+  width: 40%;
+  font-size: 200%;
+  font-weight: bold;
+  color: #fff;
+  float: right;
+  /* center vertically:https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div */
+  height: 400px;
+  line-height: 400px;
+}
