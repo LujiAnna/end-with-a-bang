@@ -1,0 +1,19 @@
+body {
+  background-color: gray ;
+}
+#showcase a img {
+  width: 100vw;
+  /* height: 288px; */
+  height: 
+  /* read more: overflow css in carousel/gallery */
+}
+
+/* js: Features
+- select movies: search bar should  have options to filter movies with params: names, 
+- import trailer: details page
+- save favorite list to watch later
+- add 1 here
+
+- API: display movies, 
+
+*/
