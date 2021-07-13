@@ -45,3 +45,45 @@ window.onclick = function(event) {
 }
 
 
+// Upcoming video's
+//
+/* BOB 1st ATTEMPT
+const imgUrl = "https://image.tmdb.org/t/p/w500"
+
+fetch ("https://api.themoviedb.org/3/movie/upcoming?api_key=2fc09aa4868aaf55aacca5023aea7172&language=en-US&page=1")
+    .then
+
+
+let titleCard = document.querySelectorAll(".gui-card__title");
+let imageCard = document.querySelectorAll(".gui-card__img");
+*/
+
+
+
+/* 2nd attempt */
+
+const imageUrl = 'https://image.tmdb.org/t/p/w500';
+fetch("\n" +
+    "https://api.themoviedb.org/3/movie/upcoming?api_key=2fc09aa4868aaf55aacca5023aea7172&language=en-US&page=1")
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        console.log(data.results)
+        setImagesToUpcomming(data.results)
+    })
+    .catch(err => {
+        console.error(err);
+    });
+
+let titleCard = document.querySelectorAll(".gui-card__title");
+let imageCard = document.querySelectorAll(".gui-card__img");
+
+const setImagesToUpcomming = (res)=>{
+    let count=0;
+    for(let i = 20 ; i < 40; i++){
+        imageCard[i].src = `${imageUrl}${res[count++].backdrop_path}`;
+        titleCard[i].innerHTML = res[count++].title;
+    }
+}
+
