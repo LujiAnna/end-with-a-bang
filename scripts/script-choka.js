@@ -16,12 +16,12 @@ let handlePrev = document.querySelectorAll(".handlePrev");
 let handleNext = document.querySelectorAll(".handleNext");
 
 handlePrev.forEach((e,i)=>e.addEventListener('click',function toLeftScroll  (){
-    rows[i].scrollLeft -= 120;
+    rows[i].scrollLeft -= 150;
 
 } ));
 
 handleNext.forEach((e,i)=>e.addEventListener('click',function toRightScroll (){
-    rows[i].scrollLeft += 120;
+    rows[i].scrollLeft += 150;
 } ));
 
 // handlePrev.forEach((e,i)=>e.addEventListener('mousedown',function toLeftScroll  (){
@@ -48,8 +48,7 @@ handleNext.forEach((e,i)=>e.addEventListener('click',function toRightScroll (){
 //img url
 //https://image.tmdb.org/t/p/w500
 const imgUrl = 'https://image.tmdb.org/t/p/w500';
-fetch("\n" +
-    "https://api.themoviedb.org/3/movie/popular?api_key=2fc09aa4868aaf55aacca5023aea7172&language=en-US")
+fetch("https://api.themoviedb.org/3/movie/popular?api_key=2fc09aa4868aaf55aacca5023aea7172&language=en-US")
     .then(response => {
         return response.json();
     })
@@ -70,3 +69,14 @@ const setImagesForPopular = (res)=>{
         title[i].innerHTML = res[i].title;
     }
 }
+
+let card = document.querySelectorAll(".gui-card");
+
+
+card.forEach((e,i)=>e.addEventListener('mouseover',function  (){
+    console.log('yes')
+} ));
+
+title.forEach((e,i)=>e.addEventListener('mouseover',function  (){
+    console.log('yes')
+} ));
