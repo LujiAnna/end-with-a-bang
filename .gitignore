@@ -3,3 +3,6 @@ development-strategy.md
 
 # ignore api key
 config.js
+
+# ignore older carousel.js
+carousel.js

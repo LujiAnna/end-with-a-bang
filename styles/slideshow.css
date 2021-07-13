@@ -1,5 +1,4 @@
 body {
-  background-color: gray ;
   margin: 0;
   padding: 0;
 }
@@ -10,22 +9,26 @@ body {
 #slideshow {
   /* max-width: 1400px; */
   width: 100%;
-  position: relative;
+  /* position: relative; */
   height: 400px;
   overflow: hidden;
   margin: auto;
- border: 1px solid #fff;
+  /* ADD */
+ border: 1px solid red;
+ background-color: red;
+ display: block;
+display:flex;
 }
 
 /* Hide the images by default */
 article {
-  display: none;
+  /* display: none; */
 }
 
 
 #slideshow article a img {
-  position: absolute; 
-  clip: rect(100px, 14000px, 400px, 0);
+  /* position: absolute; 
+  clip: rect(100px, 14000px, 400px, 0); */
   /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
   
   width: 50%;
