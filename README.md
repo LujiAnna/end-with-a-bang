@@ -14,11 +14,18 @@
 
 **Api:** Movie API
 
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
 ## Features
 
 > Must Haves
 
 - A display of movies in a scroll
+- Selection of movies: search bar should have options to filter movies with choices such as: actress/actor names, etc
+- Import trailer to view when click on movie details page
+- Select and save favorite list to watch later
 
 > Nice to Have
 
@@ -46,3 +53,5 @@
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+![Logo](https://image.flaticon.com/icons/png/512/738/738096.png)
