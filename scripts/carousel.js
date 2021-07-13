@@ -10,14 +10,19 @@ import {apiKey} from '../config.js'
 // https://www.omdbapi.com/?apikey=5387798f&t=the tomorrow war
 // https://www.omdbapi.com/?apikey=5387798f&t=the vampire diaries
 
-// TODO: Display image in html id='showcase' 
-const showcaseElement = document.getElementById('showcase');
-console.log(showcaseElement);
 
+
+
+// Display image in html id='showcase' 
+const slideshowElement = document.getElementById('slideshow');
+console.log(slideshowElement);
+
+for(let i = 0; i < 7 ; i++) {
 // image is in link then image
 
 // Alternative 1
 // create an img and link elements
+let article = document.createElement('article');
 let link = document.createElement('a');
 let image = document.createElement('img');
 let p = document.createElement('p');
@@ -40,24 +45,67 @@ const movieTitle = document.createTextNode("The Vampire Diaries");
 // console.log(link);
 // console.log(image);
 
-// TODO: find more: https://developer.mozilla.org/en-US/docs/Web/API/Element
+// read more: https://developer.mozilla.org/en-US/docs/Web/API/Element
 
-// TODO: append element in DOM
+// Display element in DOM
 link.append(image);
 // add the text node to the newly created p
 p.appendChild(movieTitle);
+link.append(p);
 
 // document.body.appendChild(image);
-showcaseElement.append(link);
+article.append(link);
 console.log(link);
-showcaseElement.append(p);
-
-// TODO: Display data object on the console 
+slideshowElement.append(article);
 
 
 // TODO: check error for when poster is unavailable: "Poster": "N/A"
 // https://www.omdbapi.com/?apikey=5387798f&t=without remorse
 
-// TODO: Add arrows to scroll
-//  TODO: Scroll images right and left    
+// Get arrows to scroll
+const leftArrowElement = document.getElementById('prev');
+const rightArrowElement = document.getElementById('next');
 
+let slideIndex = 1;
+
+let showSlides = (n) => {
+  let i;
+  let slides = document.getElementsByTagName("article"); 
+  console.log('slides', slides);
+  let dots = document.getElementsByClassName("dot");
+  console.log(dots);
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+showSlides(slideIndex);
+
+// Next/previous controls
+let nextSlide = (n) => {
+  showSlides(slideIndex += n);
+  console.log('next');
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+  console.log('current')
+}
+
+//  TODO: Scroll images right and left    
+leftArrowElement.addEventListener('click', nextSlide(-1));
+rightArrowElement.addEventListener('click', nextSlide(1));
+
+
+
+// TODO: Save user's fav movies to be viewed later
+
+}

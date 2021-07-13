@@ -1,26 +1,31 @@
 body {
   background-color: gray ;
-
+  margin: 0;
+  padding: 0;
 }
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
-#showcase {
-  /* max-width: 1000px; */
+#slideshow {
+  /* max-width: 1400px; */
   width: 100%;
   position: relative;
   height: 400px;
   overflow: hidden;
+  margin: auto;
  border: 1px solid #fff;
 }
 
-/* Add name on right of movie */
+/* Hide the images by default */
+article {
+  display: none;
+}
 
 
-#showcase a img {
+#slideshow article a img {
   position: absolute; 
-  clip: rect(0, 14000px, 400px, 0);
+  clip: rect(100px, 14000px, 400px, 0);
   /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
   
   width: 50%;
@@ -33,7 +38,7 @@ body {
   float: left;
 }
 
-#showcase p {
+#slideshow article p {
   width: 40%;
   font-size: 200%;
   font-weight: bold;
@@ -43,3 +48,58 @@ body {
   height: 400px;
   line-height: 400px;
 }
+
+/* Arrows */
+
+#prev {
+  /* left: 0px; */
+}
+
+#next {
+  right: 0px;
+  /* border-radius: 3px 0 0 3px; */
+}
+
+/* Next & previous buttons */
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  width: auto;
+  color: white;
+  border: none;
+  font-size: 300%;
+  /* padding: 110px 16px; */
+  margin-top: -50px;
+  transition: 0.6s ease;
+  /* border-radius: 0 3px 3px 0; */
+  user-select: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover, #next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots {
+  text-align:center;
+  margin-top: -22px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
