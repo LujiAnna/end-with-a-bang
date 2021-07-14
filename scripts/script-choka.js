@@ -80,6 +80,7 @@ const setImagesForPopular = (res)=>{
 const titleRow = document.querySelectorAll(".title-title-row");
     titleRow[0].innerHTML = "Popular";
     titleRow[1].innerHTML = "Upcoming";
+    titleRow[2].innerHTML= "Oldies but Goldies";
 
 
 cards.forEach(e=>{
