@@ -2,28 +2,36 @@ const apiKey = "2fc09aa4868aaf55aacca5023aea7172"
 let movieId = "536841"
 
 
-// GET MOVIE
+
+export const getAllMovieInfo = (movieId) => {
+
+  // GET MOVIE
 document.getElementById("movies-img").addEventListener('click', () =>{
-    axios
-    .get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`)
-    .then((res) => getMovie(res.data))
-    .catch((err) => console.log(err))
+  axios
+  .get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`)
+  .then((res) => getMovie(res.data))
+  .catch((err) => console.log(err))
 });
 
 
 // GET TRAILER
 document.getElementById("movies-img").addEventListener('click', () =>{
-    axios
-    .get(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}&language=en-US`)
-    .then((res) => getTrailer(res.data))
-    .catch((err) => console.log(err))
+  axios
+  .get(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}&language=en-US`)
+  .then((res) => getTrailer(res.data))
+  .catch((err) => console.log(err))
 });
 
-getTrailer = (data) => {
+}
+
+
+
+
+const  getTrailer = (data) => {
     document.getElementById("movie-trailer").src = `https://www.youtube.com/embed/${data.results[0].key}`
 }
 
-getMovie = (data) => {
+const getMovie = (data) => {
     console.log(data)
     document.getElementById("movie-title").innerHTML = data.original_title + "  "
     document.getElementById("movie-year").innerHTML = `Date: ${data.release_date}`
