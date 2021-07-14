@@ -4,8 +4,27 @@ let movieId = "536841"
 
 
 export const getAllMovieInfo = (movieId) => {
+  axios
+  .get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`)
+  .then((res) => getMovie(res.data))
+  .catch((err) => console.log(err))
 
-  // GET MOVIE
+}
+
+
+export const getMovieTrailer = (movieId) => {
+  axios
+  .get(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}&language=en-US`)
+  .then((res) => getTrailer(res.data))
+  .catch((err) => console.log(err))
+}
+
+  
+
+
+
+
+/*   // GET MOVIE
 document.getElementById("movies-img").addEventListener('click', () =>{
   axios
   .get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`)
@@ -20,9 +39,9 @@ document.getElementById("movies-img").addEventListener('click', () =>{
   .get(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}&language=en-US`)
   .then((res) => getTrailer(res.data))
   .catch((err) => console.log(err))
-});
+}); */
 
-}
+
 
 
 
