@@ -43,7 +43,7 @@ window.onclick = function(event) {
         }
     }
 }
-
+/* Upcomming Fetch row 2 */
 const imageUrl = 'https://image.tmdb.org/t/p/w500';
 
 fetch("\n" +
@@ -74,4 +74,32 @@ const setImagesToUpcomming = (res) => {
     }
 };
 
+/* Top Rated Fetch row 3 */
 
+fetch ("https://api.themoviedb.org/3/movie/top_rated?api_key=2fc09aa4868aaf55aacca5023aea7172&language=en-US&page=1")
+.then (response => {
+   return response.json();
+})
+.then(data =>{
+    console.log(data.results)
+getTopRatedMovies(data.results)
+})
+
+.catch(err => {
+    console.log(err);
+});
+
+let movieTitle =document.querySelectorAll(".gui-card__title");
+let movieImage=document.querySelectorAll(".gui-card__img");
+
+const getTopRatedMovies = (res) => {
+    let count = -1;
+    for (let i=40; i<60;i++){
+        count = count +1;
+        movieTitle[i].innerHTML = res[count].title;
+        movieImage[i].src = `${imageUrl}${res[count].backdrop_path}`;
+
+    }
+    
+
+}
