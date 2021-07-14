@@ -45,6 +45,7 @@ window.onclick = function(event) {
 }
 
 const imageUrl = 'https://image.tmdb.org/t/p/w500';
+
 fetch("\n" +
     "https://api.themoviedb.org/3/movie/upcoming?api_key=2fc09aa4868aaf55aacca5023aea7172&language=en-US&page=1")
     .then(response => {
