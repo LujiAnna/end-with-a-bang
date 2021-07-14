@@ -74,5 +74,4 @@ const setImagesToUpcomming = (res) => {
     }
 };
 
-fetch
 
