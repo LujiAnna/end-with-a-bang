@@ -21,12 +21,13 @@ body {
 /* Slideshow container */
 #slideshow {
   width: 100%;
-  max-width: 1400px;
   position: relative;
   height: 300px;
   overflow: hidden;
   margin: auto;
   margin-top: 4.3rem;
+    overflow-x: scroll;
+padding: 0!important;
   /* !!! Add a top margin to avoid content overlay */
   user-select: none;
   /* box-shadow: 0px 0px 3px 1px #000078; */
@@ -66,7 +67,7 @@ article {
   position: absolute;
   top: 25%;
   /* transform: translateY(-50%) */
-  /* top: 30vh; */
+  /* top: 30; */
   background-color: transparent;
   width: auto;
   color: white;

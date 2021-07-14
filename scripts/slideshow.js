@@ -67,9 +67,7 @@ console.log(dots);
 
 dots.forEach((element,index) => {
 element.addEventListener('click', () => {
-
-  document.getElementById('id').style.backgroundColor = "red";
-
+  
   // send image back to state
 // create an img and link elements
 let article = document.createElement('article');
