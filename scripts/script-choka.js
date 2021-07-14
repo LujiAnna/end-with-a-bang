@@ -7,6 +7,7 @@ let sectionAllMovies = document.querySelector('.section-All-movies');
 makeSliderRow(sectionAllMovies);
 makeSliderRow(sectionAllMovies);
 makeSliderRow(sectionAllMovies);
+
 let cards = document.querySelectorAll(".gui-card");
 
 
