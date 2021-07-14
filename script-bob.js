@@ -64,11 +64,13 @@ fetch("\n" +
 let titleCard = document.querySelectorAll(".gui-card__title");
 let imageCard = document.querySelectorAll(".gui-card__img");
 
+
 const setImagesToUpcomming = (res) => {
-    let count = 0;
+    let count = -1;
     for(let i = 20 ; i < 40; i++){
-        imageCard[i].src = `${imageUrl}${res[count++].backdrop_path}`;
-        titleCard[i].innerHTML = res[count++].title;
+        count = count + 1;
+        imageCard[i].src = `${imageUrl}${res[count].backdrop_path}`;
+        titleCard[i].innerHTML = res[count].title;
     }
 };
 
