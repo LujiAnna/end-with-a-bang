@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Carousel da Netflix</title>
@@ -31,15 +30,16 @@
                 <li class="nav-item">
                     <a class="nav-link active" id="videoGame" aria-current="page" href="#">Video Game</a>
                 </li>
-                <div class="dropdown">
-                    <a onclick="myFunction()" class="nav-link active" id="dropbtn" aria-current="page" href="#">Pricing </a>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a class="dropDownLink1" href="#">Junior Plan</a>
-                        <a class="dropDownLink1" href="#">Medium Plan</a>
-                        <a class="dropDownLink1" href="#">Executive Plan</a>
+                <li>
+                    <div class="dropdown">
+                        <a onclick="myFunction()" class="nav-link active" id="dropbtn" aria-current="page" href="#">Pricing </a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a class="dropDownLink1" href="#">Junior Plan</a>
+                            <a class="dropDownLink1" href="#">Medium Plan</a>
+                            <a class="dropDownLink1" href="#">Executive Plan</a>
+                        </div>
                     </div>
-                </div>
-                <a class="nav-link active" id ="prices" aria-current="page" href="#">FAQ</a>
+                    <a class="nav-link active" id ="prices" aria-current="page" href="#">FAQ</a>
                 </li>
 
 
@@ -60,7 +60,7 @@
   
 
 <!-- Scrollable row (row1) -->
-<div class="contain">
+
 
 <!-- Slideshow -->
   <section id='slideshow'></section> 
@@ -88,8 +88,8 @@
         <div class="slider">
             <h3 class="title-title-row">Most Recent</h3>
             <span  class="handle handlePrev active">
-            <i class="fa fa-caret-left" aria-hidden="true"></i>
-        </span>
+                <i class="fa fa-caret-left" aria-hidden="true"></i>
+            </span>
 
             <div  class="row scroller" >
                 <div class="row__inner">
@@ -324,20 +324,20 @@
                 </div>
 
             </div>
+
             <span   class="handle handleNext active">
-            <i class="fa fa-caret-right" aria-hidden="true"></i>
-        </span>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </span>
         </div>
 
     </div>
 </template>
 
-<!-- slideshow js -->
-<script type='module' src="./scripts/slideshow.js" async defer></script>
+    <!-- slideshow js -->
+    <script type='module' src="./scripts/slideshow.js" async defer></script>
+    <script src ="scripts/script-choka.js"></script>
+    <script src ="script-bob.js"></script>
 
-<script src ="scripts/script-choka.js"></script>
-
-<script src ="script-bob.js"></script>
 </body>
 </html>
 
