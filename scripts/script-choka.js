@@ -62,6 +62,7 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=2fc09aa4868aaf55aacca5
 
 let images = document.querySelectorAll(".gui-card__img");
 let title = document.querySelectorAll(".gui-card__title");
+let movieId = document.querySelectorAll(".movie-id");
 
 const setImagesForPopular = (res)=>{
     for(let i = 0 ; i < 20; i++){
@@ -71,6 +72,7 @@ const setImagesForPopular = (res)=>{
             images[i].src = `${imgUrl}${res[i].backdrop_path}`;
         }
         title[i].innerHTML = res[i].title;
+        movieId[i].innerHTML = res[i].id;
 
     }
 }
@@ -79,3 +81,11 @@ const titleRow = document.querySelectorAll(".title-title-row");
     titleRow[0].innerHTML = "Popular";
     titleRow[1].innerHTML = "Upcoming";
 
+
+cards.forEach(e=>{
+    e.addEventListener("click", function(){
+       localStorage.setItem('id', e.children[1].children[1].innerHTML)
+        // console.log(localStorage)
+        // console.log(localStorage.getItem("id"))
+    })
+})
