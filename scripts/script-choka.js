@@ -79,3 +79,8 @@ const titleRow = document.querySelectorAll(".title-title-row");
     titleRow[0].innerHTML = "Popular";
     titleRow[1].innerHTML = "Upcoming";
 
+cards.forEach(e=>{
+    e.addEventListener("click", function(){
+        console.log(e.children[1].children[0].innerHTML)
+    })
+})
