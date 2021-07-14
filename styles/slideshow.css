@@ -65,7 +65,7 @@ article {
 #prev, #next {
   cursor: pointer;
   position: absolute;
-  top: 25%;
+  top: 30%;
   /* transform: translateY(-50%) */
   /* top: 30; */
   background-color: transparent;
@@ -102,7 +102,8 @@ article {
 .dots {
   text-align:center;
   margin-top: -32px;
-    z-index: 4;
+  z-index: 4;
+  margin-bottom: 20px;
 }
 
 .active, .dot:hover {
