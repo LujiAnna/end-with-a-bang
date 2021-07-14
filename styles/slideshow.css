@@ -65,9 +65,8 @@ article {
 #prev, #next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 25%;
   /* transform: translateY(-50%) */
-  /* top: 30; */
   background-color: transparent;
   width: auto;
   color: white;
