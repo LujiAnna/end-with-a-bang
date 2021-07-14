@@ -8,7 +8,7 @@ makeSliderRow(sectionAllMovies);
 makeSliderRow(sectionAllMovies);
 makeSliderRow(sectionAllMovies);
 let cards = document.querySelectorAll(".gui-card");
-console.log(cards.length);
+
 
 
 const rows = document.querySelectorAll('.scroller');
@@ -53,7 +53,6 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=2fc09aa4868aaf55aacca5
         return response.json();
     })
     .then(data => {
-        console.log(data.results)
         setImagesForPopular(data.results)
     })
     .catch(err => {
@@ -65,18 +64,15 @@ let title = document.querySelectorAll(".gui-card__title");
 
 const setImagesForPopular = (res)=>{
     for(let i = 0 ; i < 20; i++){
-        images[i].src = `${imgUrl}${res[i].backdrop_path}`;
+        if(res[i].backdrop_path === null){
+            images[i].src = `${imgUrl}${res[i].poster_path}`;
+        } else{
+            images[i].src = `${imgUrl}${res[i].backdrop_path}`;
+        }
         title[i].innerHTML = res[i].title;
+
     }
 }
 
-let card = document.querySelectorAll(".gui-card");
 
 
-card.forEach((e,i)=>e.addEventListener('mouseover',function  (){
-    console.log('yes')
-} ));
-
-title.forEach((e,i)=>e.addEventListener('mouseover',function  (){
-    console.log('yes')
-} ));
