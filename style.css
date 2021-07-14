@@ -279,3 +279,6 @@ a:hover {
 
 .show {display:block;}
 
+.movie-id{
+    display: none;
+}
