@@ -16,7 +16,7 @@ images[4] = 'https://m.media-amazon.com/images/S/sonata-images-prod/SVOD_ROW_Com
 images[5] = 'https://m.media-amazon.com/images/S/sonata-images-prod/SVOD_ROW_BoratSubsequentMoviefilm_NoRing/afc2ca73-199c-4d4f-9669-1ba272bf0539._UR3000,600_SX3000_FMwebp_.jpg';
 images[6] = 'https://m.media-amazon.com/images/G/01/digital/video/sonata/SVOD_ROW_7500/63620b07-873e-4b74-add7-99c7e62545aa._UR3000,600_SX3000_FMwebp_.jpg';
 
-//  Change Image
+//  ARROW ALTERNATIVE: Change Image
 let changeImg = () => {
 
 // image is in link then image
@@ -30,7 +30,7 @@ let image = document.createElement('img');
 // Value should come from fetching data 
 link.setAttribute('href', '#');
 image.setAttribute('src', images[i]);
-image.setAttribute('name', 'slide');
+image.setAttribute('id', i);
 
 // Display element in DOM
 link.append(image);
@@ -61,19 +61,37 @@ rightArrowElement.addEventListener('click', changeImg);
 // Run function when page loads
 window.onload=changeImg;
 
-// changeImg();
-
-// DOTS
+// DOTS ALTERNATIVE: Select with dots
 let dots = document.querySelectorAll('.dot');
 console.log(dots);
 
 dots.forEach((element,index) => {
 element.addEventListener('click', () => {
-  document.slide.src = images[index];
-  // images[index].src = images[index];
+
+  document.getElementById('id').style.backgroundColor = "red";
+
+  // send image back to state
+// create an img and link elements
+let article = document.createElement('article');
+let link = document.createElement('a');
+let image = document.createElement('img');
+
+// Element.setAttribute(name, value);
+// Value should come from fetching data 
+link.setAttribute('href', '#');
+image.setAttribute('src', images[index]);
+
+// Display element in DOM
+link.append(image);
+
+// document.body.appendChild(image);
+article.append(link);
+console.log('new', article);
+slideshowElement.append(article);
+
 });
 })
 
-// TODO: Ask responsivity, dots (change, highlight on click/slid), proceed with saving, api
-
-// TODO: Save user's fav movies to be viewed later
+// TODO: MORNING - Responsivity, smooth transition, dots (highlight on click/slide)
+// TODO: NOON - proceed with saving user's fav movies to be viewed later
+// TODO: NIGHT - api
