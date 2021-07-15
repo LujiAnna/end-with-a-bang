@@ -17,6 +17,10 @@ const inputSearch = document.getElementsByTagName('input');
 
 // Interaction for value of input box when search button is clicked
 let getSearchText = () => {
+
+  // TODO: open a new html window
+  
+
   // console.log(inputSearch[0].value);
   let query = inputSearch[0].value;
 
@@ -28,9 +32,7 @@ let getSearchText = () => {
 fetch(endpoint)
       .then(response => response.json())
         .then(data => console.log(data));
-
-        
-    //       data.forEach(function(movie, i) {
+  data.forEach(function(movie, i) {
 //       document.querySelector("#slide-" + (i+1)).innerHTML = `
 //         <img src="${image.urls.regular}" alt="">
 //         <p class="author-info">
@@ -38,14 +40,14 @@ fetch(endpoint)
 //         </p>
 //       `;
 //     });
-//   });
+  });
 
     // TODO: Display on new page with nav
 
     // Make enter button from keyboard also work
 
 
-}
+  } //
 
 // user interaction
 searchElement.addEventListener('click', getSearchText);
