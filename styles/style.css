@@ -23,8 +23,13 @@
 
 /* Modal Content */
 .posterInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .modal-content {
@@ -32,6 +37,8 @@
   margin: auto;
   padding: 2rem;
   width: 60%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   border-radius: 10px;
 }
@@ -53,19 +60,11 @@
   cursor: pointer;
 }
 
-a {
-  text-decoration: none;
-  padding: 3px;
-  border-radius: 5px;
-  background-color: #F5C518;
-  color: black;
-}
-
-#info-box p {
-  border: 1px solid;
+#info-box span {
   padding: 10px;
   border-radius: 5px;
   margin: 5px;
+  background-color: #1d1d8d;
 }
 
 #movie-title {
@@ -88,6 +87,14 @@ a {
   padding: 1rem;
 }
 
+#movie-info a {
+  text-decoration: none;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: #F5C518;
+  color: black;
+}
+
 #movie-img {
   width: 100%;
   max-width: 250px;
@@ -107,5 +114,4 @@ a {
   /* Chrome and Opera */
   background-color: rgba(110, 110, 110, 0.603);
 }
-
 /*# sourceMappingURL=style.css.map */

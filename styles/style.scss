@@ -45,21 +45,17 @@
     cursor: pointer;
   }
 
-a {
-      text-decoration: none;
-      padding: 3px;
-      border-radius: 5px;
-      background-color:#F5C518;
-      color: rgb(0,0,0);
-  }
+
 
 #info-box {
-    p {
-      border: 1px solid;
+    span {
+      
       padding: 10px;
       border-radius: 5px;
       margin: 5px;
+      background-color: rgb(29, 29, 141);
     }
+    
 }
 
 #movie-title {
@@ -79,6 +75,13 @@ a {
 #movie-info{
     width: 60%;
     padding: 1rem;
+    a {
+      text-decoration: none;
+      padding: 3px;
+      border-radius: 5px;
+      background-color:#F5C518;
+      color: rgb(0,0,0);
+  }
 }
 
 #movie-img {
