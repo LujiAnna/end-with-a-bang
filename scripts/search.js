@@ -17,26 +17,28 @@ const inputSearch = document.getElementsByTagName('input');
 
 // Interaction for value of input box when search button is clicked
 let getSearchText = () => {
-
-  // TODO: open a new html window
-  
-
   // console.log(inputSearch[0].value);
   let query = inputSearch[0].value;
+    // console.log(query);
+    // console.log(typeof(query));
+
+    // TODO: save in local storage /session
+
+    // TODO: open new page
+// check whether there's any value
+if (query) {
+    // TODO: open a new html window - Localhost: http://127.0.0.1:8094/ or http://localhost:8094/
+ window.open('http://localhost:8094/search.html'); //window...wrong input
 
 // Obtain data from the api - console.log 
-
   let endpoint = `${url}${search_type}?api_key=${api_key}&query=${query}`;
-
-
   //  console.log(endpoint);
 
 // TODO: send search input
 fetch(endpoint)
       .then(response => response.json())
-<<<<<<< HEAD
-        .then(data => console.log(data));
-  data.forEach(function(movie, i) {
+        .then(data => console.log(data))
+  // data.forEach(function(movie, i) {
 //       document.querySelector("#slide-" + (i+1)).innerHTML = `
 //         <img src="${image.urls.regular}" alt="">
 //         <p class="author-info">
@@ -44,20 +46,13 @@ fetch(endpoint)
 //         </p>
 //       `;
 //     });
-  });
-=======
-
-
-
-        
->>>>>>> 4e1aaf933080380ef044bfc275a711568f23c4d9
+  // });
 
     // TODO: Display on new page with nav
 
     // Make enter button from keyboard also work
-
-
-  } //
+} // close if- loop
+  } // close function
 
 // user interaction
 searchElement.addEventListener('click', getSearchText);
