@@ -65,9 +65,8 @@ article {
 #prev, #next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 25%;
   /* transform: translateY(-50%) */
-  /* top: 30; */
   background-color: transparent;
   width: auto;
   color: white;
@@ -75,7 +74,7 @@ article {
   font-size: 300%;
   /* padding: 110px 16px; */
   /* margin-top: -50px; */
-  transition: 0.6s ease;
+  transition: all 1s ease;
   /* margin-top: -22px; */
   /* border-radius: 0 3px 3px 0; */
   user-select: none;

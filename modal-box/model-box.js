@@ -1,8 +1,6 @@
 const apiKey = "2fc09aa4868aaf55aacca5023aea7172"
 let movieId = "536841"
 
-
-
 export const getAllMovieInfo = (movieId) => {
   axios
   .get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`)
@@ -11,17 +9,12 @@ export const getAllMovieInfo = (movieId) => {
 
 }
 
-
 export const getMovieTrailer = (movieId) => {
   axios
   .get(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}&language=en-US`)
   .then((res) => getTrailer(res.data))
   .catch((err) => console.log(err))
 }
-
-  
-
-
 
 
 /*   // GET MOVIE
@@ -41,11 +34,6 @@ document.getElementById("movies-img").addEventListener('click', () =>{
   .catch((err) => console.log(err))
 }); */
 
-
-
-
-
-
 const  getTrailer = (data) => {
     document.getElementById("movie-trailer").src = `https://www.youtube.com/embed/${data.results[0].key}`
 }
@@ -61,7 +49,6 @@ const getMovie = (data) => {
     document.getElementById("movie-text").innerHTML = `${data.overview}`
     document.getElementById("imdb-button").innerText = `IMDB`
     document.getElementById("imdb-button").href = `https://www.imdb.com/title/${data.imdb_id}/?ref_=nm_knf_i2`
-
 
 // When the user clicks the button, open the modal 
 
