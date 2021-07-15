@@ -48,12 +48,14 @@
 
 
 #info-box {
-    p {
-      border: 1px solid;
+    span {
+      
       padding: 10px;
       border-radius: 5px;
       margin: 5px;
+      background-color: rgb(29, 29, 141);
     }
+    
 }
 
 #movie-title {

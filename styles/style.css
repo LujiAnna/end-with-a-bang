@@ -60,11 +60,11 @@
   cursor: pointer;
 }
 
-#info-box p {
-  border: 1px solid;
+#info-box span {
   padding: 10px;
   border-radius: 5px;
   margin: 5px;
+  background-color: #1d1d8d;
 }
 
 #movie-title {
