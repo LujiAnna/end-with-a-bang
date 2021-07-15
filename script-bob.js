@@ -208,3 +208,11 @@ cards.forEach(e=>{
     })
 })
 //------->>>>>>>>>
+
+/*
+const inputSearch = document.getElementsByTagName('input');
+const inputSearch2 = inputSearch.value;
+localStorage.setItem( 'id', inputSearch2);
+console.log(localStorage.setItem( 'id', inputSearch2 ));
+
+ */
