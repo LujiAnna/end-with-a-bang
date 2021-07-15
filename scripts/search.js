@@ -23,12 +23,16 @@ let getSearchText = () => {
     // console.log(typeof(query));
 
     // TODO: save in local storage /session
+    let storage = localStorage.setItem('id', query); // Uncaught TypeError: Failed to execute 'setItem' on 'Storage': 2 arguments required, but only 1 present.
+      console.log(storage);
+
+    let x = localStorage.getItem("id")
 
     // TODO: open new page
 // check whether there's any value
 if (query) {
     // TODO: open a new html window - Localhost: http://127.0.0.1:8094/ or http://localhost:8094/
- window.open('http://localhost:8094/search.html'); //window...wrong input
+ window.open('http://localhost:8095/search.html'); //window...wrong input
 
 // Obtain data from the api - console.log 
   let endpoint = `${url}${search_type}?api_key=${api_key}&query=${query}`;
@@ -54,5 +58,15 @@ fetch(endpoint)
 } // close if- loop
   } // close function
 
+// ALT 2
+// $("#searchButton").click( function() {
+//     var url = "http://localhost:8094/search.html" + $("#text").val();
+//     window.open(url);
+//     console
+// });
+
+// ALT 3: a tag instead of a button tag
+
 // user interaction
 searchElement.addEventListener('click', getSearchText);
+
