@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">-->
+ <!-- <link rel="stylesheet" href="style.css">-->
+  <link rel="stylesheet" href="pricing-page-style.css">
+
+  <!-- slideshow style -->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" id="navbarContainer">
+  <div class="container-fluid">
+    <img class="logo-img" src="images-bob/logo_small.png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="videoGame" aria-current="page" href="#">Video Game</a>
+        </li>
+        <div class="dropdown">
+          <a onclick="myFunction()" class="nav-link active" id="dropbtn" aria-current="page" href="#">Pricing </a>
+          <div id="myDropdown" class="dropdown-content">
+            <a class="dropDownLink1" href="pricing-page.html">Junior Plan</a>
+            <a class="dropDownLink1" href="pricing-page.html">Medium Plan</a>
+            <a class="dropDownLink1" href="pricing-page.html">Executive Plan</a>
+          </div>
+        </div>
+        <a class="nav-link active" id ="prices" aria-current="page" href="#">FAQ</a>
+        </li>
+
+
+        <li class="nav-item">
+          <a class="nav-link active" id="support" aria-current="page" href="#">Support</a>
+        </li>
+
+
+      </ul>
+      <form class="d-flex" action = "/search.html" >
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <a class="btn btn-outline-success" id="searchButton" href="search.html" type="submit">Search</a>
+      </form>
+      <!--<form class="d-flex">-->
+
+      <!--</form>-->
+    </div>
+  </div>
+</nav>
+
+</section>
+<br>
+<br>
+
+<section>
+  <div class="container py-5">
+
+    <!-- FOR DEMO PURPOSE -->
+    <header class="text-center mb-5 text-white">
+      <div class="row" id="pricing-row">
+        <div class="col-lg-7 mx-auto">
+
+          <h1>Plexflix Pricing Table</h1>
+          <p>Please subscribe to one of our plans!&nbsp;<br> <a href="index.html" class="text-reset">Don't wanna spend money watching movies online, fine! Here's a link to PopcornTime. </a></p>
+
+        </div>
+      </div>
+    </header>
+    <!-- END -->
+
+
+    <div class="row text-center align-items-end">
+      <!-- Pricing Table-->
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="bg-white p-5 rounded-lg shadow">
+          <h1 class="h6 text-uppercase font-weight-bold mb-4">Junior</h1>
+          <h2 class="h1 font-weight-bold">$9<span class="text-small font-weight-normal ml-2">/ month</span></h2>
+
+          <div class="custom-separator my-4 mx-auto bg-primary" id="separator-1"></div>
+
+          <ul class="list-unstyled my-5 text-small text-left">
+
+            <li class="mb-3">
+              <i class="fa fa-check mr-2 text-primary"></i> Number of screens you can watch on at the same time:<b> 1</b></li>
+            <li class="mb-3">
+              <i class="fa fa-check mr-2 text-primary"></i> Number of phones or tablets you can have downloads on: <b> 1</b></li>
+            <li class="mb-3 text-muted">
+              <i class="fa fa-times mr-2"></i>
+              <del>Unlimited movies and TV shows</del>
+            </li>
+            <li class="mb-3 text-muted">
+              <i class="fa fa-times mr-2"></i>
+              <del>HD available</del>
+            </li>
+            <li class="mb-3 text-muted">
+              <i class="fa fa-times mr-2"></i>
+              <del>Ultra HD available</del>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill" id="subscribe-button1">Subscribe</a>
+        </div>
+      </div>
+      <!-- END -->
+
+
+      <!-- Pricing Table-->
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="bg-white p-5 rounded-lg shadow">
+          <h1 class="h6 text-uppercase font-weight-bold mb-4">Medium</h1>
+          <h2 class="h1 font-weight-bold">$19<span class="text-small font-weight-normal ml-2">/ month</span></h2>
+
+          <div class="custom-separator my-4 mx-auto bg-primary" id="separator-2"></div>
+
+          <ul class="list-unstyled my-5 text-small text-left">
+
+            <li class="mb-3">
+              <i class="fa fa-check mr-2 text-primary"></i> Number of screens you can watch on at the same time: <b> 2</b></li>
+            <li class="mb-3">
+              <i class="fa fa-check mr-2 text-primary"></i> Number of phones or tablets you can have downloads on: <b> 2</b></li>
+            <li class="mb-3">
+              <i class="fa fa-check mr-2 text-primary"></i> Unlimited movies and TV shows</li>
+            <li class="mb-3 text-muted">
+              <i class="fa fa-times mr-2"></i>
+              <del>HD available</del>
+            </li>
+            <li class="mb-3 text-muted">
+              <i class="fa fa-times mr-2"></i>
+              <del>Ultra HD available</del>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill"id ="subscribe-button2">Subscribe</a>
+        </div>
+      </div>
+      <!-- END -->
+
+
+      <!-- Pricing Table-->
+      <div class="col-lg-4">
+        <div class="bg-white p-5 rounded-lg shadow">
+          <h1 class="h6 text-uppercase font-weight-bold mb-4">Executive</h1>
+          <h2 class="h1 font-weight-bold">$89<span class="text-small font-weight-normal ml-2">/ month</span></h2>
+
+          <div class="custom-separator my-4 mx-auto bg-primary" id="separator-3"></div>
+
+          <ul class="list-unstyled my-5 text-small text-left">
+
+            <li class="mb-3">
+              <i class="fa fa-check mr-2 text-primary"></i> Number of screens you can watch on at the same time: <b> Unlimited</b></li>
+            <li class="mb-3">
+              <i class="fa fa-check mr-2 text-primary"></i> Number of phones or tablets you can have downloads on: <b> Unlimited</b></li>
+            <li class="mb-3">
+              <i class="fa fa-check mr-2 text-primary"></i> Unlimited movies and TV shows</li>
+            <li class="mb-3">
+              <i class="fa fa-check mr-2 text-primary"></i> HD available</li>
+            <li class="mb-3">
+              <i class="fa fa-check mr-2 text-primary"></i> Ultra HD available</li>
+
+          </ul>
+          <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill" id ="subscribe-button3">Subscribe</a>
+        </div>
+      </div>
+      <!-- END -->
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
