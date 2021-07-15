@@ -4,7 +4,7 @@ import {api_key} from '../config.js';
 // console.log(api_key);
 
 // API endpoints
-const url = 'https://api.themoviedb.org/3';
+const url = 'https://api.themoviedb.org/3/';
 const search_type = 'search/multi';
 
 // Select action element
@@ -21,13 +21,15 @@ let getSearchText = () => {
   let query = inputSearch[0].value;
 
 // Obtain data from the api - console.log 
-  let endpoint = `${url}/${search_type}?api_key=${api_key}&query=${query}`;  
+  let endpoint = `${url}${search_type}?api_key=${api_key}&query=${query}`;  
   //  console.log(endpoint);
 
 // TODO: send search input
 fetch(endpoint)
       .then(response => response.json())
         .then(data => console.log(data));
+
+        
     //       data.forEach(function(movie, i) {
 //       document.querySelector("#slide-" + (i+1)).innerHTML = `
 //         <img src="${image.urls.regular}" alt="">
