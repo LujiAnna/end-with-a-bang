@@ -5,7 +5,7 @@ const slideshowElement = document.getElementById('slideshow');
 let i = 0; 			// Start Point
 let images = [];	// Images Array
 	 
-// TODO: fetch url data from API - most popular, etc => Ask Aich
+// API Possible params: popular-streaming, on tv, for rent, in theater, trending-today, this week, free movie/tv
 
 // Image List
 images[0] = 'https://m.media-amazon.com/images/S/sonata-images-prod/SVOD_ROW_TWAR_1onPV_Glow/2921bbe4-ea6d-424d-86de-8e9eec50daed._UR3000,600_SX3000_FMwebp_.jpeg';
@@ -37,7 +37,7 @@ link.append(image);
 
 // document.body.appendChild(image);
 article.append(link);
-console.log(link);
+// console.log(link);
 slideshowElement.append(article);
 
 	// Check If Index Is Under Max
@@ -63,11 +63,11 @@ window.onload=changeImg;
 
 // DOTS ALTERNATIVE: Select with dots
 let dots = document.querySelectorAll('.dot');
-console.log(dots);
+// console.log(dots);
 
 dots.forEach((element,index) => {
 element.addEventListener('click', () => {
-  
+
   // send image back to state
 // create an img and link elements
 let article = document.createElement('article');
@@ -90,6 +90,4 @@ slideshowElement.append(article);
 });
 })
 
-// TODO: MORNING - Responsivity, smooth transition, dots (highlight on click/slide)
-// TODO: NOON - proceed with saving user's fav movies to be viewed later
-// TODO: NIGHT - api
+
