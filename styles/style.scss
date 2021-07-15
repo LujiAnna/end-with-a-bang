@@ -45,13 +45,7 @@
     cursor: pointer;
   }
 
-a {
-      text-decoration: none;
-      padding: 3px;
-      border-radius: 5px;
-      background-color:#F5C518;
-      color: rgb(0,0,0);
-  }
+
 
 #info-box {
     p {
@@ -67,13 +61,8 @@ a {
     padding-bottom: 1rem;
 }
 #movie-trailer {
-<<<<<<< HEAD
-    width: 75%;
-    height: 100%;
-=======
     width:100%;
     height: auto;
->>>>>>> f4680fc416f704c4110a3af313244fb4c4fb7cc1
 }
 
 #movie-poster {
@@ -83,6 +72,13 @@ a {
 #movie-info{
     width: 60%;
     padding: 1rem;
+    a {
+      text-decoration: none;
+      padding: 3px;
+      border-radius: 5px;
+      background-color:#F5C518;
+      color: rgb(0,0,0);
+  }
 }
 
 #movie-img {
