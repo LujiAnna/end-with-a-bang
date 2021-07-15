@@ -22,26 +22,26 @@
 }
 
 /* Modal Content */
+.posterInfo {
+  display: flex;
+  flex-direction: row;
+}
+
 .modal-content {
   background-color: #888888;
   margin: auto;
   padding: 2rem;
   width: 60%;
-  height: 75%;
+  height: fit-content;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
-  float: right;
+  position: absolute;
+  right: 25px;
+  top: 10px;
   font-size: 28px;
   font-weight: bold;
 }
@@ -74,12 +74,18 @@ a {
 }
 
 #movie-trailer {
+<<<<<<< HEAD
   width: 75%;
   height: 300px;
+=======
+  width: 100%;
+  height: auto;
+>>>>>>> f4680fc416f704c4110a3af313244fb4c4fb7cc1
 }
 
 #movie-poster {
   width: 40%;
+  /* float: left;*/
 }
 
 #movie-info {
@@ -89,8 +95,14 @@ a {
 
 #movie-img {
   width: 100%;
-  height: 100%;
+  max-width: 250px;
+  height: auto;
   border-radius: 5px;
+}
+
+#movie-text {
+  width: 100%;
+  max-width: 100%;
 }
 
 .filter {
@@ -100,4 +112,5 @@ a {
   /* Chrome and Opera */
   background-color: rgba(110, 110, 110, 0.603);
 }
+
 /*# sourceMappingURL=style.css.map */
