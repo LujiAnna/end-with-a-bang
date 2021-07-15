@@ -46,6 +46,6 @@ let getSearchText = () => {
 // user interaction
 searchElement.addEventListener('click', getSearchText);
 
-
+/*
 localStorage.getItem("input");
-
+*/
