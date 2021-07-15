@@ -21,22 +21,14 @@ let getSearchText = () => {
   let query = inputSearch[0].value;
 
 // Obtain data from the api - console.log 
-  let endpoint = `${url}/${search_type}?api_key=${api_key}&query=${query}`;  
+  let endpoint = `${url}${search_type}?api_key=${api_key}&query=${query}`;
   //  console.log(endpoint);
 
 // TODO: send search input
 fetch(endpoint)
       .then(response => response.json())
         .then(data => console.log(data));
-    //       data.forEach(function(movie, i) {
-//       document.querySelector("#slide-" + (i+1)).innerHTML = `
-//         <img src="${image.urls.regular}" alt="">
-//         <p class="author-info">
-//           <a href="${image.links.html}?utm_source=slider-thing&utm_medium=referral&utm_campaign=api-credit">Photo by ${image.user.name}</a> on <a href="https://unsplash.com/">Unsplash</a>
-//         </p>
-//       `;
-//     });
-//   });
+
 
     // TODO: Display on new page with nav
 
