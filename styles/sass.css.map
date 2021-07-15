@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"sass.css"}
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,OAAO;CACjB",
+    "sources": [
+        "sass.scss"
+    ],
+    "names": [],
+    "file": "sass.css"
+}

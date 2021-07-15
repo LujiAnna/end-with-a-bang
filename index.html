@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- slideshow style -->
     <link rel="stylesheet" href="./styles/slideshow.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -97,6 +98,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -108,8 +110,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
-                                <div>detailsdetailsdetailsdetailsdetails</div>
-
+                                <div class="movie-id"></div>
                             </div>
 
                         </div>
@@ -122,6 +123,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -133,6 +135,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -144,6 +147,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -155,6 +159,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -166,6 +171,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -177,6 +183,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -188,6 +195,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -199,6 +207,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -210,6 +219,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -221,6 +231,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -232,6 +243,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -243,6 +255,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -254,6 +267,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -265,6 +279,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -276,6 +291,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -287,6 +303,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -298,6 +315,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -309,6 +327,7 @@
                                 <div class="gui-card__title">
                                     Assassin’s Creed
                                 </div>
+                                <div class="movie-id"></div>
                             </div>
                         </div>
 
@@ -324,12 +343,39 @@
         </div>
     </template>
     </div>
+
+    <div id="myModal" class="modal ">
+        <div class="modal-content filter">
+          <div id="movie-poster">
+              <img id="movie-img"src="" alt="">
+          </div>
+          <div id="movie-info">
+            <h1 id="movie-title"></h1>
+            <a href="" id="imdb-button" target="_blank"></a>
+            <div id="info-box">
+                <span id="movie-language"></span>
+                <span id="movie-runtime"></span>
+                <span id="movie-genre"></span>
+                <span id="movie-year"></span>
+            </div>
+            <div id="trailer-box">
+                <embed id="movie-trailer" src="">
+            </div>
+        
+            <p id="movie-text">Some text in the Modal..</p>
+              
+          </div>
+          <span class="close">&times;</span>
+        </div>
+      
+      </div>
+
     <!-- slideshow js -->
     <script type='module' src="./scripts/slideshow.js" async defer></script>
+    <script src = "https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src ="scripts/script-choka.js"></script>
     <script src ="script-bob.js"></script>
     <script type='module' src="./scripts/search.js" async defer></script>
-
 
 </body>
 </html>
