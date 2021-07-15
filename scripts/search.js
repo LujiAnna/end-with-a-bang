@@ -4,7 +4,7 @@ import {api_key} from '../config.js';
 // console.log(api_key);
 
 // API endpoints
-const url = 'https://api.themoviedb.org/3';
+const url = 'https://api.themoviedb.org/3/';
 const search_type = 'search/multi';
 
 // Select action element
@@ -21,7 +21,11 @@ let getSearchText = () => {
   let query = inputSearch[0].value;
 
 // Obtain data from the api - console.log 
+<<<<<<< HEAD
   let endpoint = `${url}${search_type}?api_key=${api_key}&query=${query}`;
+=======
+  let endpoint = `${url}${search_type}?api_key=${api_key}&query=${query}`;  
+>>>>>>> 47f178cb2166d6c12064e94816039e18aae4abc4
   //  console.log(endpoint);
 
 // TODO: send search input
@@ -29,6 +33,19 @@ fetch(endpoint)
       .then(response => response.json())
         .then(data => console.log(data));
 
+<<<<<<< HEAD
+=======
+        
+    //       data.forEach(function(movie, i) {
+//       document.querySelector("#slide-" + (i+1)).innerHTML = `
+//         <img src="${image.urls.regular}" alt="">
+//         <p class="author-info">
+//           <a href="${image.links.html}?utm_source=slider-thing&utm_medium=referral&utm_campaign=api-credit">Photo by ${image.user.name}</a> on <a href="https://unsplash.com/">Unsplash</a>
+//         </p>
+//       `;
+//     });
+//   });
+>>>>>>> 47f178cb2166d6c12064e94816039e18aae4abc4
 
     // TODO: Display on new page with nav
 
