@@ -216,3 +216,8 @@ localStorage.setItem( 'id', inputSearch2);
 console.log(localStorage.setItem( 'id', inputSearch2 ));
 
  */
+function showAlertMessage () {
+    const myAlert = "Our services are unavailable in your country"
+    alert(myAlert);
+};
+
