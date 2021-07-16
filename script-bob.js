@@ -221,3 +221,9 @@ function showAlertMessage () {
     alert(myAlert);
 };
 
+let searcBtn = document.querySelector(".btn");
+searcBtn.addEventListener("click", function(){
+    const inputSearch = document.querySelector('.form-control');
+    const inputSearch2 = inputSearch.value;
+    localStorage.setItem( 'searchInput', inputSearch2);
+})
