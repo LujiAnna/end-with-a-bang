@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="./styles/game1.css">
 </head>
 <body>
 
+<h1>Memory game</h1>
 
-<div class="game-container">
-  <div class="hint-container">
-    <p class="hint-text">Hint: Here will be hint or explanations.</p>
-  </div>
-  <div class="emptyRows2Quess">
-    <span class="letter2guess"></span>
-  </div>
-  <input type="text" axlength="1"  placeholder="Enter a letter . . . &#x23ce;">
-  <button class="guessButton">Guess</button>
+<div class="memoryGameContainer">
+  <div class="memoryGameInner">
+<!--      <div class="gameRow1"></div>-->
+<!--      <div class="gameRow2"></div>-->
+    <template class="cardTemp">
+      <div class="gameCard">
+          <div class="flip-card-front">
+          </div>
+          <div class="flip-card-back">
+          </div>
+      </div>
+    </template>
 
-  <div class="container-message">
-    <h3>Wrong Letters</h3>
-    <p class="wrong-letter"></p>
   </div>
 </div>
 
