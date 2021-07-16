@@ -14,16 +14,16 @@ const backDiv = document.querySelectorAll(".flip-card-back");
 const gameCard = document.querySelectorAll(".gameCard");
 const gameCards = [...gameCard];
 
-const img0 = "//upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Angelina_Jolie_2_June_2014_%28cropped%29.jpg/225px-Angelina_Jolie_2_June_2014_%28cropped%29.jpg";
+const img0 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK_9su_tAnl_If1P2Uei6Bn7b00tbMpzGQ8w&usqp=CAU";
 const img1 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvJ3FBjqPAqCsxww-ura7-H1lIPL34C-eXvA&usqp=CAU";
 const img2 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfItq6RklDd1UJWGHfPNWunt7oXz0irbDq_w&usqp=CAU";
 const img3 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCcnPYf728oApZ9gIrXELuePLOvDa23COxIQ&usqp=CAU";
 const img4 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwx2leu7il1dmJp1Doh_042QZnSHvW6IJeJQ&usqp=CAU";
 const img5 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGM1-lN4wseVQMO0jLz4nIi8ZmwbUES6AmxA&usqp=CAU";
-const img6 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCnDP8Tuzyp3yHguFecHtHXFPbPfWj81xSg&usqp=CAU"
-const img7 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3uetguGVp8lflq4c_3YKG1ix5xw7nL-5WVA&usqp=CAU"
-const img8 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJIHeOyCsNjLDYGJvl7ourAs0DpF9k-5dtdQ&usqp=CAU"
-const img9 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCuvGJk4KwuwPKs_kN2geJ2toLHW41KGCWBQ&usqp=CAU"
+const img6 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCnDP8Tuzyp3yHguFecHtHXFPbPfWj81xSg&usqp=CAU";
+const img7 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3uetguGVp8lflq4c_3YKG1ix5xw7nL-5WVA&usqp=CAU";
+const img8 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJIHeOyCsNjLDYGJvl7ourAs0DpF9k-5dtdQ&usqp=CAU";
+const img9 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCuvGJk4KwuwPKs_kN2geJ2toLHW41KGCWBQ&usqp=CAU";
 
 
  const dataImg =[
@@ -80,25 +80,30 @@ let divNum1;
 let divNum2;
 let clickedCard1;
 gameCard.forEach((e,i)=>{
+
     e.addEventListener("click", function(){
 
         click++;
+
         hideElem(backDiv[i]);
         showElem(frontDiv[i]);
         if(click === 1){
+
             clickedCard1 = e.children[0].attributes.divNum.value;
             clickedImg1 = frontDiv[i].attributes.data.value;
             divNum1 = frontDiv[i].attributes.divNum.value;
             previousClickedDiv = e.children[0];
             previousClickedBehind = e.children[1];
+            previousClickedDiv.classList.add("animate__flipInY");
+            previousClickedBehind.classList.add("animate__flipInY");
         }
         if(click === 2 && clickedCard1 !== frontDiv[i].attributes.divNum.value){
             console.log(frontDiv[i].attributes.divNum.value)
             clickedImg2 = frontDiv[i].attributes.data.value;
             divNum2 = frontDiv[i].attributes.divNum.value;
+            previousClickedDiv.classList.remove("animate__flipInY");
             if(clickedImg1 === clickedImg2 ){
                 click = 0;
-                console.log("yes")
             }
         }
         if(clickedImg1 !== clickedImg2 && click === 2){
@@ -109,6 +114,7 @@ gameCard.forEach((e,i)=>{
                 showElem(previousClickedBehind);
             }, 200);
             click=0;
+
         }
         if(click==0 && clickedImg1 !== clickedImg2){
             setTimeout(function(){
@@ -117,6 +123,7 @@ gameCard.forEach((e,i)=>{
                 showElem(backDiv[i]);
                 showElem(previousClickedBehind);
             }, 200);
+
         }
 
     })

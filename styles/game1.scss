@@ -4,6 +4,7 @@ body{
 }
 h1{
   text-align: center;
+  color: #dadada;
 }
 .memoryGameInner{
   margin: 10px auto;
@@ -16,7 +17,7 @@ h1{
     width: 100%;
     min-height: 5em;
     text-align: center;
-    background-color: rgb(218, 218, 218);
+    //background-color: rgb(218, 218, 218);
     margin: 3px;
   }
 }
