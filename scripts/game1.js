@@ -80,9 +80,12 @@ let divNum1;
 let divNum2;
 let clickedCard1;
 gameCard.forEach((e,i)=>{
+    e.classList.add("animate__animated");
+
     e.addEventListener("click", function(){
 
         click++;
+        e.classList.toggle("animate__flipInX");
         hideElem(backDiv[i]);
         showElem(frontDiv[i]);
         if(click === 1){
@@ -96,6 +99,8 @@ gameCard.forEach((e,i)=>{
             console.log(frontDiv[i].attributes.divNum.value)
             clickedImg2 = frontDiv[i].attributes.data.value;
             divNum2 = frontDiv[i].attributes.divNum.value;
+            e.classList.toggle("animate__flipInX");
+
             if(clickedImg1 === clickedImg2 ){
                 click = 0;
                 console.log("yes")
@@ -127,5 +132,7 @@ gameCard.forEach(e=>{
     })
 })
 
-
+let a = '2021-06-1980';
+let f = a.split('-')[0];
+console.log(f);
 
