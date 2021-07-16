@@ -20,10 +20,10 @@ const img2 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfItq6RklDd1U
 const img3 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCcnPYf728oApZ9gIrXELuePLOvDa23COxIQ&usqp=CAU";
 const img4 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwx2leu7il1dmJp1Doh_042QZnSHvW6IJeJQ&usqp=CAU";
 const img5 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGM1-lN4wseVQMO0jLz4nIi8ZmwbUES6AmxA&usqp=CAU";
-const img6 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCnDP8Tuzyp3yHguFecHtHXFPbPfWj81xSg&usqp=CAU"
-const img7 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3uetguGVp8lflq4c_3YKG1ix5xw7nL-5WVA&usqp=CAU"
-const img8 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJIHeOyCsNjLDYGJvl7ourAs0DpF9k-5dtdQ&usqp=CAU"
-const img9 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCuvGJk4KwuwPKs_kN2geJ2toLHW41KGCWBQ&usqp=CAU"
+const img6 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCnDP8Tuzyp3yHguFecHtHXFPbPfWj81xSg&usqp=CAU";
+const img7 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3uetguGVp8lflq4c_3YKG1ix5xw7nL-5WVA&usqp=CAU";
+const img8 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJIHeOyCsNjLDYGJvl7ourAs0DpF9k-5dtdQ&usqp=CAU";
+const img9 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCuvGJk4KwuwPKs_kN2geJ2toLHW41KGCWBQ&usqp=CAU";
 
 
  const dataImg =[
