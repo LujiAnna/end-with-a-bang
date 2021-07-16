@@ -42,13 +42,13 @@ const  getTrailer = (data) => {
 const getMovie = (data) => {
     // console.log(data)
     document.getElementById("movie-title").innerHTML = data.original_title + "  "
-    document.getElementById("movie-year").innerHTML = `Date: ${data.release_date}`
+    document.getElementById("movie-year").innerHTML = `Date: ${data.release_date.substr(0,4)}`
     document.getElementById("movie-runtime").innerHTML = `Runtime: ${data.runtime} min.`
-    document.getElementById("movie-language").innerHTML = `Lang.: ${data.spoken_languages[0].name}`
+    document.getElementById("movie-language").innerHTML = `Lang: ${data.spoken_languages[0].name}`
     document.getElementById("movie-genre").innerHTML = `Genre: ${data.genres[0].name}`
     document.getElementById("movie-img").src = `https://image.tmdb.org/t/p/w500${data.poster_path}`
-    document.getElementById("movie-text").innerHTML = `${data.overview}`
-    document.getElementById("imdb-button").innerText = `IMDB`
+    document.getElementById("movie-text").innerHTML = `Overview: ${data.overview}`
+    /* document.getElementById("imdb-button").innerText = `<strong>IMDB</strong>` */
     document.getElementById("imdb-button").href = `https://www.imdb.com/title/${data.imdb_id}/?ref_=nm_knf_i2`
 
 

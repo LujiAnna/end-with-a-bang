@@ -60,30 +60,41 @@
   cursor: pointer;
 }
 
+#info-box {
+  margin: 0.5rem;
+}
+
 #info-box span {
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-  margin: 5px;
-  background-color: #1d1d8d;
+  margin-right: 0.1;
+  background-color: #5078B3;
 }
 
 #movie-title {
   display: inline;
+  font-size: 1.8em;
   padding-bottom: 1rem;
 }
 
 #movie-trailer {
+  margin-top: 1rem;
   width: 100%;
-  height: auto;
+  height: 15rem;
 }
 
 #movie-poster {
-  width: 40%;
-  /* float: left;*/
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #movie-info {
-  width: 60%;
+  width: 65%;
   padding: 1rem;
 }
 
@@ -103,7 +114,8 @@
 }
 
 #movie-text {
-  width: 100%;
+  margin-top: 1.5rem;
+  width: 75%;
   max-width: 100%;
 }
 

@@ -1,6 +1,7 @@
 body {
   background-color: #212529;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1 {
@@ -9,12 +10,15 @@ h1 {
 
 .memoryGameInner {
   margin: 10px auto;
+  display: -ms-grid;
   display: grid;
   max-width: 750px;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  -ms-grid-columns: (minmax(60px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
   justify-items: center;
   grid-gap: 10px 10px;
 }
+
 .memoryGameInner .gameCard {
   width: 100%;
   min-height: 5em;
@@ -38,5 +42,4 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 /*# sourceMappingURL=game1.css.map */
