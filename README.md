@@ -45,10 +45,20 @@
 
 ## Authors
 
-- [@neyzar1111](https://github.com/neyzar1111)
-- [@BobWauters](https://github.com/BobWauters)
-- [@kdrbek06](https://github.com/kdrbek06)
-- [@LujiAnna](https://www.github.com/octokatherine)
+Apply our freshly learned HTML , JS, CSS & HTML skills to create a fun groupproject.
+We've created a knock-off Flappy Bird game as a tribute to our coach Bert. Hence the name !
+Get through the four levels, each level designed by a groupmember. Levels have been designed as followed
+
+Home screen : Tanja
+Level 1 : Glenn
+Level 2 : Jonathan
+Level 3 : Tanja
+Level 4 : Dennis
+
+- [@neyzar1111](https://github.com/neyzar1111): Aichurok
+- [@BobWauters](https://github.com/BobWauters): Bob
+- [@kdrbek06](https://github.com/kdrbek06): Kadir
+- [@LujiAnna](https://www.github.com/octokatherine): Anna - Slideshow with pure JS for Branding Purposes in order to present multiple movie images in a gallery-like manner
 
 ## License
 
