@@ -46,7 +46,7 @@
 ## Authors
 
 - [@neyzar1111](https://github.com/neyzar1111): Aichurok
-- [@BobWauters](https://github.com/BobWauters): Bob
+- [@BobWauters](https://github.com/BobWauters): Bob - Header dropdown menu with corresponding pages and worked part on search functionality/main body carroussel
 - [@kdrbek06](https://github.com/kdrbek06): Kadir
 - [@LujiAnna](https://www.github.com/octokatherine): Anna - Slideshow with pure JS for Branding Purposes in order to present multiple movie images in a gallery-like manner
 
